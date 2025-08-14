@@ -1,0 +1,263 @@
+{
+  "sessions": [
+    {
+      "id": "gen01",
+      "title": "General Session",
+      "code": "GEN01-P",
+      "date": "3 September 2025",
+      "startTime": "09:00",
+      "endTime": "11:55",
+      "category": "General Session",
+      "description": "Opening Performance by our Guest Artists, Welcome & Introduction by Our Host Mandira Bedi (Actor, Fashion Designer, & Television Presenter), Welcome Address by our Leadership, Reimagine What is Possible, Transform Innovation Into Action Session, Panel Discussion, Closing Remarks | Transition to AI-First Expo",
+      "isGeneralSession": true,
+      "speakers": [
+        {
+          "name": "Mandira Bedi",
+          "title": "Actor, Fashion Designer, & Television Presenter",
+          "company": "Host"
+        },
+        {
+          "name": "Manish Gupta",
+          "title": "President and Managing Director",
+          "company": "Dell Technologies India"
+        },
+        {
+          "name": "Sam Burd",
+          "title": "President and Chief Strategy Officer",
+          "company": "Dell Technologies"
+        }
+      ],
+      "agenda": [
+        "Opening Performance by our Guest Artists",
+        "Welcome & Introduction by Our Host",
+        "Mandira Bedi, Actor, Fashion Designer, & Television Presenter",
+        "Welcome Address by our Leadership",
+        "Reimagine What is Possible",
+        "Host Speaker: Manish Gupta, President & Managing Director, Dell Technologies India",
+        "Transform Innovation Into Action Session",
+        "Panel Discussion",
+        "Closing Remarks | Transition to AI-First Expo"
+      ]
+    },
+    {
+      "id": "ai01",
+      "title": "Dell AI Factory: What It is and Why It Matters",
+      "code": "AI01-P",
+      "date": "3 September 2025",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "category": "Artificial Intelligence",
+      "description": "Learn how Dell AI Factory - Dell's approach to delivering enterprise AI - accelerates AI innovation for organisations of all sizes with a portfolio of AI-optimised products, solutions, and services. Combining an open ecosystem, integrated solutions, expert services, and best practices, discover how it enables faster AI outcomes."
+    },
+    {
+      "id": "mdc10",
+      "title": "Advancing AI with AMD and Dell",
+      "code": "MDC10-P",
+      "date": "3 September 2025",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Explore how the partnership between AMD and Dell Technologies is advancing AI capabilities through cutting-edge hardware solutions. Learn about the latest AMD processors optimized for AI workloads and how Dell integrates them into enterprise-ready solutions that accelerate AI adoption and innovation."
+    },
+    {
+      "id": "mdc09",
+      "title": "Simplifying Enterprise AI - Inferencing with API Endpoint and Dell PowerEdge on Intel Xeon and Gaudi",
+      "code": "MDC09-P",
+      "date": "3 September 2025",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Discover how Dell PowerEdge servers powered by Intel Xeon and Gaudi processors simplify enterprise AI inferencing. Learn about API endpoint management, optimized inference workflows, and how to deploy scalable AI solutions that deliver real-time insights across your organization."
+    },
+    {
+      "id": "mdc01",
+      "title": "Thriving in the Modern Data Center with AI and Multicloud",
+      "code": "MDC01-P",
+      "date": "3 September 2025",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Navigate the complexities of modern data center transformation with AI and multicloud strategies. Learn how to build resilient, scalable infrastructure that leverages AI for optimization while maintaining flexibility across multiple cloud platforms. Discover best practices for workload placement, data management, and cost optimization."
+    },
+    {
+      "id": "ai05",
+      "title": "Building the NVIDIA Enterprise AI Factory: A scalable blueprint for IT excellence",
+      "code": "AI05-P",
+      "date": "3 September 2025",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "category": "Artificial Intelligence",
+      "description": "Learn how to build an NVIDIA-powered Enterprise AI Factory that scales with your business needs. This session covers the architectural blueprint for deploying NVIDIA GPUs, software stacks, and Dell infrastructure to create a comprehensive AI platform that accelerates model training, inference, and deployment across your organization."
+    },
+    {
+      "id": "mdc08",
+      "title": "Dell and Microsoft AI-Enabled Solutions from Device to Cloud",
+      "code": "MDC08-P",
+      "date": "3 September 2025",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Explore the comprehensive AI solutions from Dell and Microsoft that span from edge devices to cloud infrastructure. Learn how to leverage Azure AI services with Dell hardware, implement hybrid AI workflows, and create seamless experiences that connect AI-powered devices with cloud-based intelligence."
+    },
+    {
+      "id": "mw01",
+      "title": "Dell Pro AI PCs, silicon innovation, and the future of work: Why refresh with Dell Technologies?",
+      "code": "MW01-P",
+      "date": "3 September 2025",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "category": "Modern Workplace & PCs",
+      "description": "Discover how Dell Pro AI PCs are revolutionizing the workplace with next-generation silicon innovations. Learn about the latest AI-accelerated features, enhanced productivity tools, and why now is the ideal time to refresh your organization's PC fleet with Dell Technologies' cutting-edge solutions designed for the AI era."
+    },
+    {
+      "id": "mw02",
+      "title": "Revolutionizing AI development with Dell Pro Max and Dell Pro AI Studio",
+      "code": "MW02-P",
+      "date": "3 September 2025",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "category": "Modern Workplace & PCs",
+      "description": "Transform your AI development workflow with Dell Pro Max workstations and Dell Pro AI Studio. This session showcases powerful tools and hardware designed for data scientists and AI developers, featuring optimized environments for model development, testing, and deployment right from your desktop."
+    },
+    {
+      "id": "mdc03",
+      "title": "PowerEdge for AI: The gold standard in AI infrastructure",
+      "code": "MDC03-P",
+      "date": "3 September 2025",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "AI demands infrastructure that performs, scales, and endures — and that’s exactly what Dell PowerEdge delivers. Purpose-built for AI, PowerEdge XE servers offer exceptional compute density, direct liquid cooling, and rack-scale integration to power today’s most advanced AI workloads. With built-in security and simplified deployment, PowerEdge enables customers to build the ideal AI Factory — fast, efficient, and future-ready. Join us to learn why PowerEdge is the gold standard for AI infrastructure."
+    },
+    {
+      "id": "mdc04",
+      "title": "Safeguard AI workloads with modern cyber resilience",
+      "code": "MDC04-P",
+      "date": "3 September 2025",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Protecting AI data is essential as technology evolves, especially with Generative AI (GenAI) introducing new vulnerabilities to advanced cyber threats. Learn how new products and enhancements to our end-to-end solutions — including all-flash performance and anomaly detection — help safeguard AI workloads, delivering unmatched reliability while enabling operational confidence. Discover how to achieve cyber resilience for AI and all your data with the Dell PowerProtect portfolio."
+    },
+    {
+      "id": "mdc02",
+      "title": "Top PowerStore updates for the modern data center",
+      "code": "MDC02-P",
+      "date": "3 September 2025",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI. With a robust, open architecture that supports seamless data ingestion, discovery, and real-time processing, this platform helps organisations accelerate their AI pipelines. Whether you're decoding the human genome, rendering visual effects, exploring space, or driving the next medical breakthrough, discover how Dell provides the data foundation to turn big ideas into real innovation."
+    },
+    {
+      "id": "mw06",
+      "title": "Unlock and Maximize Commercial PC Platform Innovations for all users",
+      "code": "MW06-P",
+      "date": "3 September 2025",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "category": "Modern Workplace & PCs",
+      "description": "Unlock the potential of commercial PCs for all business users across security, reliability, performance, and AI capabilities. This session covers the best user experiences, maintaining stable IT infrastructure and security enhancements for the modern workplace. Hear from Intel and Dell on how they are addressing business needs and providing an unparalleled experience for today and tomorrow."
+    },
+    {
+      "id": "ai02",
+      "title": "Enhance developer productivity with Dell AI Code Assistant",
+      "code": "AI02-P",
+      "date": "3 September 2025",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "category": "Artificial Intelligence",
+      "description": "Develop better code, faster with Dell AI Coding Assistant, built on the Dell AI Factory. Learn how Dell AI Coding Assistant can empower developers by automating repetitive coding tasks, allowing them to focus on more complex and creative aspects of coding."
+    },
+    {
+      "id": "ai06",
+      "title": "Unleashing the Future of AI Development: Dell Pro Max Powered by NVIDIA",
+      "code": "AI06-P",
+      "date": "3 September 2025",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "category": "Artificial Intelligence",
+      "description": "See how Dell Pro Max PCs and NVIDIA RTX PRO GPUs are transforming the way AI developers, data scientists, creators, and power users innovate. Discover how the AI powerhouses, Dell Pro Max with GB10 & GB300, are set to revolutionise local AI development, scaling workflows from deskside to data center. And from Agentic AI to Physical AI, learn how NVIDIA Blueprints and NIMs running on Dell Pro Max drive unparalleled development, training, and inference."
+    },
+    {
+      "id": "mw03",
+      "title": "Advancing sustainability: Modular design and materials for PCs and ecosystems",
+      "code": "MW03-P",
+      "date": "3 September 2025",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "category": "Modern Workplace & PCs",
+      "description": "How are we building more sustainable technologies? Join us for a discussion on Dell’s industry-leading innovations in modular design, recycled and renewable materials, and energy efficiency in our AI PCs and ecosystem. We're pushing the boundaries of what’s possible in circular design — and reimagining the way we build our PCs — to help customers reduce their environmental footprint and meet their business and societal goals."
+    },
+    {
+      "id": "mw05",
+      "title": "Refresh Your Endpoints with Copilot+ PCs and Harness AI Capabilities at the Edge",
+      "code": "MW05-P",
+      "date": "3 September 2025",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "category": "Modern Workplace & PCs",
+      "description": "Join Microsoft for an exciting journey with Windows 11 Pro and Copilot+ PCs. Discover the keys to strong security, smooth collaboration, and optimal productivity. This session is your opportunity to explore a world where technology and human creativity combine, empowering your team to achieve more. Prepare to change your digital environment and access a future of limitless potential."
+    },
+    {
+      "id": "ai03",
+      "title": "Secure AI: Combine Governance, Data Management, and Security to Succeed",
+      "code": "AI03-P",
+      "date": "3 September 2025",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "category": "Artificial Intelligence",
+      "description": "Data security, governance, and quality are key to an effective AI strategy. Join us to hear about governance frameworks critical for data integrity and compliance, with steps for an integrated approach to data security and management. Learn best practices for data classification, security visibility, access controls, and more, to help secure the use of AI and enhance model performance and solution resilience. Discover these essential capabilities through an interactive session highlighting cross-functional efforts necessary to drive common objectives."
+    },
+    {
+      "id": "mdc05",
+      "title": "Optimize AI inferencing at the edge with Dell NativeEdge",
+      "code": "MDC05-P",
+      "date": "3 September 2025",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Transform edge operations with seamless automation, enhanced security, and simplified AI solution deployment. Join us as we explore Dell NativeEdge — an end-to-end, full-stack solution designed for a new era of virtualisation and containerisation requirements for edge AI. Learn how to deploy NVIDIA AI frameworks effortlessly, while managing AI workloads for a wide range of diverse edge use cases. Scale smarter, gain faster insights, and boost productivity with robust, edge-optimised AI solutions."
+    },
+    {
+      "id": "mw04",
+      "title": "Simplify IT with Dell Security, Manageability, and Dell APEX Solutions",
+      "code": "MW04-P",
+      "date": "3 September 2025",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "category": "Modern Workplace & PCs",
+      "description": "IT spend is on the rise as businesses refresh PCs and adopt new AI solutions. Simplify workflows and reclaim time with Dell's cloud-based PCs and peripheral management solutions. Discover how you can optimise fleet-wide security with Dell Trusted Workspace and tap into the latest PCs and services with no upfront cost, with Dell APEX PC as a Service. Learn how to reduce the attack surface and unlock valuable capital while staying focused on winning business."
+    },
+    {
+      "id": "mdc06",
+      "title": "What really happens behind the curtain of private-cloud deployments",
+      "code": "MDC06-P",
+      "date": "3 September 2025",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "Private cloud deployment comes with a variety of complexities and challenges, from ensuring seamless and secure onboarding, to provisioning stacks with confidence, to managing lifecycle operations efficiently. In this session, we’ll peek behind the curtain of Dell's new unified approach to private-cloud deployment and management. We’ll explore demo using validated designs that simplify Day 0 to Day 2 operations, and even show how you can customise your own stacks."
+    },
+    {
+      "id": "ai04",
+      "title": "From raw to real: Transform data into insights with the Dell AI Data Platform",
+      "code": "AI04-P",
+      "date": "3 September 2025",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "category": "Artificial Intelligence",
+      "description": "As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI. With a robust, open architecture that supports seamless data ingestion, discovery, and real-time processing, this platform helps organisations accelerate their AI pipelines. Whether you're decoding the human genome, rendering visual effects, exploring space, or driving the next medical breakthrough, discover how Dell provides the data foundation to turn big ideas into real innovation."
+    },
+    {
+      "id": "mdc07",
+      "title": "Deploy AI Workloads at Warp Speed with Dell AI Factory",
+      "code": "MDC07-P",
+      "date": "3 September 2025",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "category": "Modern Data Center & Multicloud",
+      "description": "In a rapidly evolving AI landscape, organisations face time-to-market pressures, cost inefficiencies, skill gaps, and scaling unpredictability. Dell is redefining infrastructure to simplify the deployment of AI workloads on the Dell AI Factory through automation, streamlined operations, hybrid-cloud orchestration, and zero-trust security. In this session, we’ll provide an overview of Dell’s new blueprint for infrastructure flexibility, and share best practices for deploying and managing your AI workloads."
+    }
+  ]
+}

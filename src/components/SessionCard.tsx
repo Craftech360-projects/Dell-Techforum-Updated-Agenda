@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import SessionDetailModal from "./SessionDetailModal";
+import { useState } from "react";
+import sessionsData from "../data/sessions.json";
 
 interface SessionCardProps {
   time: string;
@@ -18,16 +21,8 @@ interface SessionCardProps {
 }
 
 const getCategoryColor = (category: string) => {
-  switch (category.toLowerCase()) {
-    case 'artificial intelligence':
-      return 'bg-purple-100 text-purple-800';
-    case 'modern data center & multicoud':
-      return 'bg-blue-100 text-blue-800';
-    case 'modern workplace & pcs':
-      return 'bg-green-100 text-green-800';
-    default:
-      return 'bg-gray-100 text-gray-800';
-  }
+  // Using light gray for all categories
+  return 'bg-gray-100 text-gray-600';
 };
 
 const SessionCard = ({ 
@@ -40,30 +35,66 @@ const SessionCard = ({
   speaker,
   isGeneralSession = false 
 }: SessionCardProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const getSessionData = () => {
+    // Find session data from JSON if available
+    const sessionFromJson = sessionsData.sessions.find((s) => s.code === code);
+    
+    if (sessionFromJson) {
+      return {
+        title: sessionFromJson.title,
+        code: sessionFromJson.code,
+        date: sessionFromJson.date,
+        time: sessionFromJson.startTime,
+        endTime: sessionFromJson.endTime,
+        category: sessionFromJson.category,
+        description: sessionFromJson.description,
+        speakers: sessionFromJson.speakers,
+        agenda: sessionFromJson.agenda
+      };
+    }
+    
+    // Fallback to props data
+    return {
+      title,
+      code: code || '',
+      date: '3 September 2025',
+      time,
+      endTime: endTime || '',
+      category,
+      description,
+      speakers: speaker ? [speaker] : undefined
+    };
+  };
   return (
-    <Card className="p-6 mb-6 hover:shadow-lg transition-shadow">
-      <div className="flex justify-between items-start mb-4">
-        <div>
-          <div className="text-2xl font-semibold text-foreground mb-2">
-            {time} IST
+    <Card className="p-6 hover:shadow-lg transition-shadow">
+      {isGeneralSession && (
+        <div className="mb-4">
+          <h3 
+            className="text-xl font-bold text-[#1d56c0] mb-2 cursor-pointer hover:underline"
+            onClick={() => setIsModalOpen(true)}
+          >
+            {title} {code && `(${code})`}
+          </h3>
+          <div className="text-sm text-muted-foreground">
+            {time}-{endTime} IST
           </div>
-          {isGeneralSession && (
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {title} {code && `(${code})`}
-            </h3>
-          )}
         </div>
-      </div>
+      )}
 
       {!isGeneralSession && (
         <>
-          <h4 className="text-lg font-semibold text-foreground mb-3">
+          <h4 
+            className="text-lg font-semibold text-[#1d56c0] mb-2 cursor-pointer hover:underline"
+            onClick={() => setIsModalOpen(true)}
+          >
             {title} {code && `[${code}]`}
           </h4>
           
           {endTime && (
             <div className="text-sm text-muted-foreground mb-3">
-              {time}-{endTime}
+              {time}-{endTime} IST
             </div>
           )}
         </>
@@ -77,10 +108,26 @@ const SessionCard = ({
 
       {description && (
         <div className="mb-4">
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground leading-relaxed line-clamp-3">
             {description}
           </p>
-          <Button variant="link" className="p-0 h-auto font-normal text-dell-blue">
+          <Button 
+            variant="link" 
+            className="p-0 h-auto font-normal text-dell-blue"
+            onClick={() => setIsModalOpen(true)}
+          >
+            view more
+          </Button>
+        </div>
+      )}
+
+      {!isGeneralSession && !description && (
+        <div className="mb-4">
+          <Button 
+            variant="link" 
+            className="p-0 h-auto font-normal text-dell-blue"
+            onClick={() => setIsModalOpen(true)}
+          >
             view more
           </Button>
         </div>
@@ -108,6 +155,13 @@ const SessionCard = ({
           </div>
         </div>
       )}
+
+      <SessionDetailModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        sessionData={getSessionData()}
+        isGeneralSession={isGeneralSession}
+      />
     </Card>
   );
 };

@@ -2,18 +2,18 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="bg-white border-b border-dell-gray">
+    <header className="bg-white border-dell-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-foreground">
-              <span className="text-dell-blue">DELL</span>
-              <span className="text-gray-600 font-normal ml-1">Technologies</span>
-              <span className="text-gray-800 font-medium ml-2">Forum</span>
+            <div className="text-2xl font-bold text-black">
+              <span className="text-black">DELL</span>
+              <span className="text-black font-normal ml-1">Technologies /</span>
+              <span className="text-black font-medium ml-2">Forum</span>
             </div>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
+          {/* <nav className="hidden md:flex space-x-8">
             <a href="#" className="text-foreground hover:text-dell-blue transition-colors">
               Summary
             </a>
@@ -34,7 +34,7 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </header>

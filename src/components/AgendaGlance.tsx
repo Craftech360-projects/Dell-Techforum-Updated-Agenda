@@ -43,7 +43,7 @@ const AgendaGlance = () => {
   ];
 
   return (
-    <section className="bg-dell-blue py-16 relative overflow-hidden">
+    <section className="bg-[#0F4B9C] py-16 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <svg className="absolute right-0 top-0 h-full w-1/3" viewBox="0 0 200 400" fill="none">
           <path
@@ -65,7 +65,7 @@ const AgendaGlance = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+        <div className="max-w-4xl mx-auto bg-white rounded-xs shadow-xl overflow-hidden">
           <div className="divide-y divide-gray-200">
             {agendaItems.map((item, index) => (
               <div key={index} className="flex p-6 hover:bg-gray-50 transition-colors">

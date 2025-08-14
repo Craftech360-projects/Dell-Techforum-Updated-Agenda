@@ -1,6 +1,25 @@
 import SessionCard from "./SessionCard";
+import sessionsData from "../data/sessions.json";
 
 const SessionsTimeline = () => {
+  // Group sessions by time slot
+  const groupSessionsByTime = () => {
+    const grouped: { [key: string]: typeof sessionsData.sessions } = {};
+    
+    sessionsData.sessions.forEach(session => {
+      const timeKey = `${session.startTime}-${session.endTime}`;
+      if (!grouped[timeKey]) {
+        grouped[timeKey] = [];
+      }
+      grouped[timeKey].push(session);
+    });
+    
+    return grouped;
+  };
+
+  const groupedSessions = groupSessionsByTime();
+  const sortedTimeSlots = Object.keys(groupedSessions).sort();
+
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,103 +29,75 @@ const SessionsTimeline = () => {
           </h2>
         </div>
 
-        <SessionCard
-          time="09:00"
-          title="General Session"
-          code="GEN01-P"
-          category="General Session"
-          endTime="11:55"
-          description="Opening Performance by our Guest Artists, Welcome & Introduction by Our Host Mandira Bedi (Actor, Fashion Designer, & Television Presenter), Welcome Address by our Leadership, Reimagine What is Possible, Transform Innovation Into Action Session, Panel Discussion, Closing Remarks | Transition to AI-First Expo"
-          speaker={{
-            name: "Mandira Bedi",
-            title: "Actor, Fashion Designer, & Television Presenter",
-            company: "Host"
-          }}
-          isGeneralSession
-        />
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <SessionCard
-            time="13:30"
-            endTime="14:00"
-            title="Dell AI Factory: What It is and Why It Matters"
-            code="AI01-P"
-            category="Artificial Intelligence"
-          />
-
-          <SessionCard
-            time="13:30"
-            endTime="14:00"
-            title="Advancing AI with AMD and Dell"
-            code="MDC10-P"
-            category="Modern Data Center & Multicoud"
-          />
-
-          <SessionCard
-            time="13:30"
-            endTime="14:00"
-            title="Simplifying Enterprise AI - Inferencing with API Endpoint and Dell PowerEdge on Intel Xeon and Gaudi"
-            code="MDC09-P"
-            category="Modern Data Center & Multicoud"
-          />
-
-          <SessionCard
-            time="13:30"
-            endTime="14:00"
-            title="Thriving in the Modern Data Center with AI and Multicloud"
-            code="MDC01-P"
-            category="Modern Data Center & Multicoud"
-          />
-
-          <SessionCard
-            time="14:00"
-            endTime="14:30"
-            title="Building the NVIDIA Enterprise AI Factory: A scalable blueprint for IT excellence"
-            code="AI05-P"
-            category="Artificial Intelligence"
-          />
-
-          <SessionCard
-            time="14:00"
-            endTime="14:30"
-            title="Dell and Microsoft AI-Enabled Solutions from Device to Cloud"
-            code="MDC08-P"
-            category="Modern Data Center & Multicoud"
-          />
-
-          <SessionCard
-            time="14:00"
-            endTime="14:30"
-            title="Dell Pro AI PCs, silicon innovation, and the future of work: Why refresh with Dell Technologies?"
-            code="MW01-P"
-            category="Modern Workplace & PCs"
-          />
-
-          <SessionCard
-            time="14:00"
-            endTime="14:30"
-            title="Revolutionizing AI development with Dell Pro Max and Dell Pro AI Studio"
-            code="MW02-P"
-            category="Modern Workplace & PCs"
-          />
-
-          <SessionCard
-            time="15:00"
-            endTime="15:30"
-            title="Enhance developer productivity with Dell AI Code Assistant"
-            code="AI02-P"
-            category="Artificial Intelligence"
-          />
-
-          <SessionCard
-            time="16:00"
-            endTime="16:30"
-            title="From raw to real: Transform data into insights with the Dell AI Data Platform"
-            code="AI04-P"
-            category="Artificial Intelligence"
-            description="As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI."
-          />
-        </div>
+        {sortedTimeSlots.map((timeSlot, index) => {
+          const sessions = groupedSessions[timeSlot];
+          const isGeneralSession = sessions.some(s => s.isGeneralSession);
+          
+          if (isGeneralSession) {
+            // Render General Session separately (full width)
+            const generalSession = sessions.find(s => s.isGeneralSession);
+            if (!generalSession) return null;
+            
+            return (
+              <div key={timeSlot} className="mb-8">
+                <div className="flex gap-8">
+                  <div className="w-32 flex-shrink-0 pt-2">
+                    <div className="text-xl font-semibold text-gray-700">
+                      {generalSession.startTime}
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      IST
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <SessionCard
+                      time={generalSession.startTime}
+                      endTime={generalSession.endTime}
+                      title={generalSession.title}
+                      code={generalSession.code}
+                      category={generalSession.category}
+                      description={generalSession.description}
+                      speaker={generalSession.speakers?.[0]}
+                      isGeneralSession={true}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          }
+          
+          // Render regular sessions in grid with time on the left
+          return (
+            <div key={timeSlot} className="mb-8">
+              {index > 0 && <hr className="border-gray-200 mb-8" />}
+              <div className="flex gap-8">
+                <div className="w-32 flex-shrink-0 pt-2">
+                  <div className="text-xl font-semibold text-gray-700">
+                    {timeSlot.split('-')[0]}
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    IST
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="grid gap-6 md:grid-cols-2">
+                    {sessions.map(session => (
+                      <SessionCard
+                        key={session.id}
+                        time={session.startTime}
+                        endTime={session.endTime}
+                        title={session.title}
+                        code={session.code}
+                        category={session.category}
+                        description={session.description}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
