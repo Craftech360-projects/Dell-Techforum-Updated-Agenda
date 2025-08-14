@@ -28,6 +28,14 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				'dell-blue': {
+					DEFAULT: 'hsl(var(--dell-blue))',
+					dark: 'hsl(var(--dell-blue-dark))'
+				},
+				'dell-gray': {
+					DEFAULT: 'hsl(var(--dell-gray))',
+					dark: 'hsl(var(--dell-gray-dark))'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
