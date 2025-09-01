@@ -1,18 +1,18 @@
 const AgendaGlance = () => {
   const agendaItems = [
     {
-      time: "7:30 AM – 9:05 AM",
+      time: "7:30 AM – 9:00 AM",
       title: "Breakfast / Registrations",
-      subtitle: "AI-First Expo Visit"
+      subtitle: "Solutions Expo Visit"
     },
     {
-      time: "9:05 AM – 11:55 AM", 
+      time: "9:00 AM – 11:55 AM", 
       title: "General Session",
       subtitle: "Keynotes and presentations"
     },
     {
       time: "11:55 AM – 12:25 PM",
-      title: "AI-First Expo Visit",
+      title: "Solutions Expo Visit",
       subtitle: "Explore the exhibition"
     },
     {
@@ -27,7 +27,7 @@ const AgendaGlance = () => {
     },
     {
       time: "4:30 PM – 5:15 PM",
-      title: "AI-First Expo Visit",
+      title: "Solutions Expo Visit",
       subtitle: "Final exploration of AI solutions"
     },
     {
@@ -43,7 +43,7 @@ const AgendaGlance = () => {
   ];
 
   return (
-    <section className="bg-[#0F4B9C] py-16 relative overflow-hidden">
+    <section className="bg-[#1d56c0] py-6 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <svg className="absolute right-0 top-0 h-full w-1/3" viewBox="0 0 200 400" fill="none">
           <path
@@ -55,12 +55,12 @@ const AgendaGlance = () => {
         </svg>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-2">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-3">
+          <h2 className="text-2xl font-bold text-white mb-">
             AGENDA AT A GLANCE
           </h2>
-          <p className="text-blue-100">
+          <p className="text-white">
             Your day planned at a glance
           </p>
         </div>
@@ -68,17 +68,17 @@ const AgendaGlance = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-xs shadow-xl overflow-hidden">
           <div className="divide-y divide-gray-200">
             {agendaItems.map((item, index) => (
-              <div key={index} className="flex p-6 hover:bg-gray-50 transition-colors">
+              <div key={index} className="flex p-4 hover:bg-gray-50 transition-colors">
                 <div className="w-48 flex-shrink-0">
-                  <div className="text-sm font-medium text-foreground">
+                  <div className="text-sm font-medium text-[#1d56c0]">
                     {item.time}
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="text-lg font-medium text-dell-blue mb-1">
+                  <div className="text-lg font-medium text-[#1d56c0] mb-1">
                     {item.title}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm text-[#000000]">
                     {item.subtitle}
                   </div>
                 </div>
