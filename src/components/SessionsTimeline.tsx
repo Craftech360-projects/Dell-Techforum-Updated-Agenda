@@ -21,9 +21,9 @@ const SessionsTimeline = () => {
   const sortedTimeSlots = Object.keys(groupedSessions).sort();
 
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
+    <section className="bg-gray-50 py-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-4">
           <h2 className="text-2xl font-bold text-foreground mb-4">
             3 September 2025
           </h2>
@@ -32,6 +32,7 @@ const SessionsTimeline = () => {
         {sortedTimeSlots.map((timeSlot, index) => {
           const sessions = groupedSessions[timeSlot];
           const isGeneralSession = sessions.some(s => s.isGeneralSession);
+          const isSpecialSession = sessions.some(s => s.isSpecialSession);
           
           if (isGeneralSession) {
             // Render General Session separately (full width)
@@ -39,7 +40,7 @@ const SessionsTimeline = () => {
             if (!generalSession) return null;
             
             return (
-              <div key={timeSlot} className="mb-8">
+              <div key={timeSlot} className="mb-6">
                 <div className="flex gap-8">
                   <div className="w-32 flex-shrink-0 pt-2">
                     <div className="text-xl font-semibold text-gray-700">
@@ -49,7 +50,7 @@ const SessionsTimeline = () => {
                       IST
                     </div>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0 overflow-hidden">
                     <SessionCard
                       time={generalSession.startTime}
                       endTime={generalSession.endTime}
@@ -65,11 +66,44 @@ const SessionsTimeline = () => {
               </div>
             );
           }
+
+          if (isSpecialSession) {
+            // Render Special Session separately (full width)
+            const specialSession = sessions.find(s => s.isSpecialSession);
+            if (!specialSession) return null;
+            
+            return (
+              <div key={timeSlot} className="mb-6">
+                <div className="flex gap-8">
+                  <div className="w-32 flex-shrink-0 pt-2">
+                    <div className="text-xl font-semibold text-gray-700">
+                      {specialSession.startTime}
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      IST
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0 overflow-hidden">
+                    <SessionCard
+                      time={specialSession.startTime}
+                      endTime={specialSession.endTime}
+                      title={specialSession.title}
+                      code={specialSession.code}
+                      category={specialSession.category}
+                      description={specialSession.description}
+                      speaker={specialSession.speakers?.[0]}
+                      isSpecialSession={true}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          }
           
           // Render regular sessions in grid with time on the left
           return (
-            <div key={timeSlot} className="mb-8">
-              {index > 0 && <hr className="border-gray-200 mb-8" />}
+            <div key={timeSlot} className="mb-6">
+              {index > 0 && <hr className="border-gray-200 mb-6" />}
               <div className="flex gap-8">
                 <div className="w-32 flex-shrink-0 pt-2">
                   <div className="text-xl font-semibold text-gray-700">
@@ -80,7 +114,7 @@ const SessionsTimeline = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-4">
                     {sessions.map(session => (
                       <SessionCard
                         key={session.id}

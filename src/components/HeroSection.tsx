@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold text-black mb-6">
             Sessions to inspire innovation
@@ -19,7 +19,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-[#0F4B9C] hover:bg-[#0c3f85] text-white px-8 py-3 text-lg font-medium rounded-xs">
+            <Button className="bg-[#1d56c0] hover:bg-[#0c3f85] text-white px-4 py-3 text-md font-medium rounded-xs">
               Register Now
             </Button>
           </a>

@@ -1,9 +1,9 @@
 {
   "sessions": [
     {
-      "id": "gen01",
+      "id": "gen00",
       "title": "General Session",
-      "code": "GEN01-P",
+      "code": "GEN00-P",
       "date": "3 September 2025",
       "startTime": "09:00",
       "endTime": "11:55",
@@ -25,7 +25,23 @@
           "name": "Sam Burd",
           "title": "President and Chief Strategy Officer",
           "company": "Dell Technologies"
+        },
+        {
+          "name": "Praval Singh",
+          "title": "VP Marketing and Customer Experience",
+          "company": "Zoho Corporation"
+        },
+        {
+          "name": "Mridu Bhandari",
+          "title": "Renowned Broadcast Journalist",
+          "company": ""
+        },
+        {
+          "name": "Ganesh Gopalan",
+          "title": "Co-Founder & CEO",
+          "company": "Gnani.AI"
         }
+
       ],
       "agenda": [
         "Opening Performance by our Guest Artists",
@@ -47,7 +63,14 @@
       "startTime": "13:30",
       "endTime": "14:00",
       "category": "Artificial Intelligence",
-      "description": "Learn how Dell AI Factory - Dell's approach to delivering enterprise AI - accelerates AI innovation for organisations of all sizes with a portfolio of AI-optimised products, solutions, and services. Combining an open ecosystem, integrated solutions, expert services, and best practices, discover how it enables faster AI outcomes."
+      "description": "Learn how Dell AI Factory - Dell's approach to delivering enterprise AI - accelerates AI innovation for organisations of all sizes with a portfolio of AI-optimised products, solutions, and services. Combining an open ecosystem, integrated solutions, expert services, and best practices, discover how it enables faster AI outcomes.",
+      "speakers": [
+        {
+          "name": "Thaarani Palanichamy",
+          "title": "AI Solutions Specialist - CSP and Telco",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc10",
@@ -57,7 +80,31 @@
       "startTime": "13:30",
       "endTime": "14:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "Explore how the partnership between AMD and Dell Technologies is advancing AI capabilities through cutting-edge hardware solutions. Learn about the latest AMD processors optimized for AI workloads and how Dell integrates them into enterprise-ready solutions that accelerate AI adoption and innovation."
+      "description": "Enterprises are navigating a new era defined by data growth, AI adoption, and the demand for greater efficiency. But OSF Healthcare, Fulgent Geonomics, and MakeMake Entertainment took and different approach. They partnered with Dell and AMD to modernize their datacenter, improve application performance and manage complex workflows. We’ll cover real use cases and actual customer success stories so you leave empowered to deliver measurable gains in performance, efficiency, and TCO at your organization. Whether you're building AI models, modernizing your IT architecture, or enhancing collaboration, this session will equip you with the tools and knowledge to drive the next wave of AI transformation.",
+      "speakers": [
+        {
+          "name": "Jayannt Kukreja",
+          "title": "Senior Sales Lead",
+          "company": "AMD"
+        }
+      ]
+    },
+    {
+      "id": "mdc07",
+      "title": "Deploy AI Workloads at Warp Speed with Dell AI Factory",
+      "code": "MDC07-P",
+      "date": "3 September 2025",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "category": "Modern Data Center & Multicloud",
+      "description": "In a rapidly evolving AI landscape, organizations face time-to-market pressures, cost inefficiencies, skill gaps, and scaling unpredictability. Dell is redefining infrastructure to simplify deploying AI workloads on the Dell AI Factory through automation, streamlined operations, hybrid-cloud orchestration, and zero-trust security. We will provide an overview of Dell’s new blueprint for infrastructure flexibility and share best practices to deploy and manage your AI workloads.",
+      "speakers": [
+        {
+          "name": "Deepak Waghmare",
+          "title": "CTO – APJC",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc09",
@@ -67,18 +114,16 @@
       "startTime": "13:30",
       "endTime": "14:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "Discover how Dell PowerEdge servers powered by Intel Xeon and Gaudi processors simplify enterprise AI inferencing. Learn about API endpoint management, optimized inference workflows, and how to deploy scalable AI solutions that deliver real-time insights across your organization."
+      "description": "Introducing an easy deploy Enterprise AI inferencing solution – with API endpoint choice. Learn how to enable cloud repatriation of ‘ChatGPT’ use cases to protect your own data. Discover how no AI software development is needed, with a common environment for your infrastructure across CPU, GPU, PCI-e or OAM, requiring no code change.",
+      "speakers": [
+        {
+          "name": "Mridula Jayaraman",
+          "title": "Partner Enablement Lead",
+          "company": "Intel"
+        }
+      ]
     },
-    {
-      "id": "mdc01",
-      "title": "Thriving in the Modern Data Center with AI and Multicloud",
-      "code": "MDC01-P",
-      "date": "3 September 2025",
-      "startTime": "13:30",
-      "endTime": "14:00",
-      "category": "Modern Data Center & Multicloud",
-      "description": "Navigate the complexities of modern data center transformation with AI and multicloud strategies. Learn how to build resilient, scalable infrastructure that leverages AI for optimization while maintaining flexibility across multiple cloud platforms. Discover best practices for workload placement, data management, and cost optimization."
-    },
+    
     {
       "id": "ai05",
       "title": "Building the NVIDIA Enterprise AI Factory: A scalable blueprint for IT excellence",
@@ -87,7 +132,14 @@
       "startTime": "14:00",
       "endTime": "14:30",
       "category": "Artificial Intelligence",
-      "description": "Learn how to build an NVIDIA-powered Enterprise AI Factory that scales with your business needs. This session covers the architectural blueprint for deploying NVIDIA GPUs, software stacks, and Dell infrastructure to create a comprehensive AI platform that accelerates model training, inference, and deployment across your organization."
+      "description": "IT professionals are key to AI success. This session shares NVIDIA’s strategies for building AI factories designed for Agentic AI and reasoning models. Learn how NVIDIA integrates accelerated computing, networking and storage with AI software to meet your goals faster. We’ll address LLM performance and agentic workflows, offering best practices to optimize AI factory using NVIDIA AI Enterprise and NVIDIA Enterprise reference architectures (RAs)—keeping you ahead in AIccelera",
+      "speakers": [
+        {
+          "name": "Chaitanya Shetty",
+          "title": "Senior Solutions Architect",
+          "company": "NVIDIA"
+        }
+      ]
     },
     {
       "id": "mdc08",
@@ -97,17 +149,14 @@
       "startTime": "14:00",
       "endTime": "14:30",
       "category": "Modern Data Center & Multicloud",
-      "description": "Explore the comprehensive AI solutions from Dell and Microsoft that span from edge devices to cloud infrastructure. Learn how to leverage Azure AI services with Dell hardware, implement hybrid AI workflows, and create seamless experiences that connect AI-powered devices with cloud-based intelligence."
-    },
-    {
-      "id": "mw01",
-      "title": "Dell Pro AI PCs, silicon innovation, and the future of work: Why refresh with Dell Technologies?",
-      "code": "MW01-P",
-      "date": "3 September 2025",
-      "startTime": "14:00",
-      "endTime": "14:30",
-      "category": "Modern Workplace & PCs",
-      "description": "Discover how Dell Pro AI PCs are revolutionizing the workplace with next-generation silicon innovations. Learn about the latest AI-accelerated features, enhanced productivity tools, and why now is the ideal time to refresh your organization's PC fleet with Dell Technologies' cutting-edge solutions designed for the AI era."
+      "description": "Microsoft Azure is a hybrid cloud platform enabling customers to secure and govern applications across on-premises, multicloud, and edge environments. Evolving to meet you in your digital transformation journey, it leverages Dell solutions for SQL workloads, container apps, and managed data services with Azure Arc. Discover AI Integration, Azure Updates, Windows Server, and SQL Server features for governance and data utility.",
+      "speakers": [
+        {
+          "name": "Srihari Dhandhapani",
+          "title": "Advisory Architect or Enterprise Cloud Architect ",
+          "company": "Dell Technologies "
+        }
+      ]
     },
     {
       "id": "mw02",
@@ -117,7 +166,31 @@
       "startTime": "14:00",
       "endTime": "14:30",
       "category": "Modern Workplace & PCs",
-      "description": "Transform your AI development workflow with Dell Pro Max workstations and Dell Pro AI Studio. This session showcases powerful tools and hardware designed for data scientists and AI developers, featuring optimized environments for model development, testing, and deployment right from your desktop."
+      "description": "Dell Pro Max and Dell Pro AI Studio combine advanced hardware and GPU-accelerated performance with a powerful AI toolkit to simplify and accelerate local AI development. With scalable, highly configurable Dell Pro Max systems and the cross-device capabilities of Dell Pro AI Studio, developers can efficiently prototype, deploy and manage AI applications. Learn how these solutions reduce cloud reliance, enhance security, and streamline workflows to empower confident, future-ready AI innovation.",
+      "speakers": [
+        {
+          "name": "Rajat Jain",
+          "title": "Director, Client Solutions",
+          "company": "Dell Technologies"
+        }
+      ]
+    },
+    {
+      "id": "mdc01",
+      "title": "Thriving in the Modern Data Center with AI and Multicloud",
+      "code": "MDC01-P",
+      "date": "3 September 2025",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "category": "Modern Data Center & Multicloud",
+      "description": "It’s time to rethink modernization. Discover how Dell Technologies empowers you to transform your data center with AI, advance your multicloud strategy, and adapt to rapid change. Explore solutions designed to accelerate innovation, helping to ensure your organization stays ahead in a fast-evolving world. Join us to build the modern data center that drives your success.",
+      "speakers": [
+        {
+          "name": "Sugumar Umapathy",
+          "title": "CTO - India Presales",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc03",
@@ -127,7 +200,14 @@
       "startTime": "14:30",
       "endTime": "15:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "AI demands infrastructure that performs, scales, and endures — and that’s exactly what Dell PowerEdge delivers. Purpose-built for AI, PowerEdge XE servers offer exceptional compute density, direct liquid cooling, and rack-scale integration to power today’s most advanced AI workloads. With built-in security and simplified deployment, PowerEdge enables customers to build the ideal AI Factory — fast, efficient, and future-ready. Join us to learn why PowerEdge is the gold standard for AI infrastructure."
+      "description": "AI demands infrastructure that performs, scales, and endures — and that's exactly what Dell PowerEdge delivers. Purpose-built for AI, PowerEdge XE servers offer exceptional compute density, direct liquid cooling, and rack-scale integration to power today's most advanced AI workloads. With built-in security and simplified deployment, PowerEdge enables customers to build the ideal AI Factory — fast, efficient, and future-ready. Join us to learn why PowerEdge is the gold standard for AI infrastructure.",
+      "speakers": [
+        {
+          "name": "Kamleshwar Rajender",
+          "title": "AI Solution Sales Specialist",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc04",
@@ -137,7 +217,14 @@
       "startTime": "14:30",
       "endTime": "15:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "Protecting AI data is essential as technology evolves, especially with Generative AI (GenAI) introducing new vulnerabilities to advanced cyber threats. Learn how new products and enhancements to our end-to-end solutions — including all-flash performance and anomaly detection — help safeguard AI workloads, delivering unmatched reliability while enabling operational confidence. Discover how to achieve cyber resilience for AI and all your data with the Dell PowerProtect portfolio."
+      "description": "Protecting AI data is essential as technology evolves, especially with Generative AI (GenAI) introducing new vulnerabilities to advanced cyber threats. Learn how new products and enhancements to our end-to-end solutions — including all-flash performance and anomaly detection — help safeguard AI workloads, delivering unmatched reliability while enabling operational confidence. Discover how to achieve cyber resilience for AI and all your data with the Dell PowerProtect portfolio.",
+      "speakers": [
+        {
+          "name": "Goutam Sahu",
+          "title": "Product & Solutions Sales Manager",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc02",
@@ -147,7 +234,14 @@
       "startTime": "14:30",
       "endTime": "15:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI. With a robust, open architecture that supports seamless data ingestion, discovery, and real-time processing, this platform helps organisations accelerate their AI pipelines. Whether you're decoding the human genome, rendering visual effects, exploring space, or driving the next medical breakthrough, discover how Dell provides the data foundation to turn big ideas into real innovation."
+      "description": "The future of IT runs on smarter storage—and PowerStore’s latest release keeps you ahead of the curve. Learn how AI-driven automation, comprehensive zero-trust security, and improved efficiency can simplify operations, reduce costs, and give you the agility to adapt to whatever comes next. Get the tools you need to transform infrastructure into a competitive advantage.",
+      "speakers": [
+        {
+          "name": "Praveen CBV",
+          "title": "Advisory Presales Solutions Architect",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mw06",
@@ -157,7 +251,31 @@
       "startTime": "14:30",
       "endTime": "15:00",
       "category": "Modern Workplace & PCs",
-      "description": "Unlock the potential of commercial PCs for all business users across security, reliability, performance, and AI capabilities. This session covers the best user experiences, maintaining stable IT infrastructure and security enhancements for the modern workplace. Hear from Intel and Dell on how they are addressing business needs and providing an unparalleled experience for today and tomorrow."
+      "description": "Unlock the potential of commercial PCs for all business users across security, reliability, performance, and AI capabilities. This session covers the best user experiences, maintaining stable IT infrastructure and security enhancements for the modern workplace. Hear from Intel and Dell on how they are addressing business needs and providing an unparalleled experience for today and tomorrow.",
+      "speakers": [
+        {
+          "name": "Rajita Kaundin",
+          "title": "Product Manager for Commercial Client Computing Solutions",
+          "company": "Intel"
+        }
+      ]
+    },
+    {
+      "id": "ai06",
+      "title": "Accelerating Local AI Development with Dell Pro Max and NVIDIA",
+      "code": "AI06-P",
+      "date": "3 September 2025",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "category": "Artificial Intelligence",
+      "description": "Unlock the next era of AI innovation with Dell Pro Max PCs, powered by NVIDIA’ This session explores how the combination of Dell Pro Max PCs—featuring NVIDIA Grace Blackwell architecture and RTX PRO GPUs—and the NVIDIA AI Enterprise software suite empowers developers to build, test, and deploy advanced AI models locally.",
+      "speakers": [
+        {
+          "name": "Chaitanya Shetty",
+          "title": "Senior Solutions Architect",
+          "company": "NVIDIA"
+        }
+      ]
     },
     {
       "id": "ai02",
@@ -167,17 +285,14 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "category": "Artificial Intelligence",
-      "description": "Develop better code, faster with Dell AI Coding Assistant, built on the Dell AI Factory. Learn how Dell AI Coding Assistant can empower developers by automating repetitive coding tasks, allowing them to focus on more complex and creative aspects of coding."
-    },
-    {
-      "id": "ai06",
-      "title": "Unleashing the Future of AI Development: Dell Pro Max Powered by NVIDIA",
-      "code": "AI06-P",
-      "date": "3 September 2025",
-      "startTime": "15:00",
-      "endTime": "15:30",
-      "category": "Artificial Intelligence",
-      "description": "See how Dell Pro Max PCs and NVIDIA RTX PRO GPUs are transforming the way AI developers, data scientists, creators, and power users innovate. Discover how the AI powerhouses, Dell Pro Max with GB10 & GB300, are set to revolutionise local AI development, scaling workflows from deskside to data center. And from Agentic AI to Physical AI, learn how NVIDIA Blueprints and NIMs running on Dell Pro Max drive unparalleled development, training, and inference."
+      "description": "Develop better code, faster with Dell AI Coding Assistant, built on the Dell AI Factory. Learn how Dell AI Coding Assistant can empower developers by automating repetitive coding tasks, allowing them to focus on more complex and creative aspects of coding.",
+      "speakers": [
+        {
+          "name": "Shankar Subramanian",
+          "title": "General Manager - AI Solution Sales, Asia Pacific & Japan",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mw03",
@@ -187,7 +302,14 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "category": "Modern Workplace & PCs",
-      "description": "How are we building more sustainable technologies? Join us for a discussion on Dell’s industry-leading innovations in modular design, recycled and renewable materials, and energy efficiency in our AI PCs and ecosystem. We're pushing the boundaries of what’s possible in circular design — and reimagining the way we build our PCs — to help customers reduce their environmental footprint and meet their business and societal goals."
+      "description": "How are we building more sustainable technologies? Join us for a discussion on Dell's industry-leading innovations in modular design, recycled and renewable materials, and energy efficiency in our AI PCs and ecosystem. We're pushing the boundaries of what's possible in circular design — and reimagining the way we build our PCs — to help customers reduce their environmental footprint and meet their business and societal goals.",
+      "speakers": [
+        {
+          "name": "Neetu Kaul",
+          "title": "Senior Principal Engineer, Product Technologist",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mw05",
@@ -197,7 +319,14 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "category": "Modern Workplace & PCs",
-      "description": "Join Microsoft for an exciting journey with Windows 11 Pro and Copilot+ PCs. Discover the keys to strong security, smooth collaboration, and optimal productivity. This session is your opportunity to explore a world where technology and human creativity combine, empowering your team to achieve more. Prepare to change your digital environment and access a future of limitless potential."
+      "description": "Join Microsoft for an exciting journey with Windows 11 Pro and Copilot+ PCs. Discover the keys to strong security, smooth collaboration, and optimal productivity. This session is your opportunity to explore a world where technology and human creativity combine, empowering your team to achieve more. Prepare to change your digital environment and access a future of limitless potential.",
+      "speakers": [
+        {
+          "name": "Saji Kumar Sukumaran",
+          "title": "Director – MNA Alliances",
+          "company": "Microsoft Corporation (India) Pvt. Ltd."
+        }
+      ]
     },
     {
       "id": "ai03",
@@ -207,7 +336,14 @@
       "startTime": "15:30",
       "endTime": "16:00",
       "category": "Artificial Intelligence",
-      "description": "Data security, governance, and quality are key to an effective AI strategy. Join us to hear about governance frameworks critical for data integrity and compliance, with steps for an integrated approach to data security and management. Learn best practices for data classification, security visibility, access controls, and more, to help secure the use of AI and enhance model performance and solution resilience. Discover these essential capabilities through an interactive session highlighting cross-functional efforts necessary to drive common objectives."
+      "description": "Data security, governance, and quality are key to an effective AI strategy. Join us to hear about governance frameworks critical for data integrity and compliance, with steps for an integrated approach to data security and management. Learn best practices for data classification, security visibility, access controls, and more, to help secure the use of AI and enhance model performance and solution resilience. Discover these essential capabilities through an interactive session highlighting cross-functional efforts necessary to drive common objectives.",
+      "speakers": [
+        {
+          "name": "Kailash Joshi",
+          "title": "Director & Regional Head",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc05",
@@ -217,7 +353,14 @@
       "startTime": "15:30",
       "endTime": "16:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "Transform edge operations with seamless automation, enhanced security, and simplified AI solution deployment. Join us as we explore Dell NativeEdge — an end-to-end, full-stack solution designed for a new era of virtualisation and containerisation requirements for edge AI. Learn how to deploy NVIDIA AI frameworks effortlessly, while managing AI workloads for a wide range of diverse edge use cases. Scale smarter, gain faster insights, and boost productivity with robust, edge-optimised AI solutions."
+      "description": "Transform edge operations with seamless automation, enhanced security, and simplified AI solution deployment. Join us as we explore Dell NativeEdge — an end-to-end, full-stack solution designed for a new era of virtualisation and containerisation requirements for edge AI. Learn how to deploy NVIDIA AI frameworks effortlessly, while managing AI workloads for a wide range of diverse edge use cases. Scale smarter, gain faster insights, and boost productivity with robust, edge-optimised AI solutions.",
+      "speakers": [
+        {
+          "name": "Akhil Birur",
+          "title": "Regional Sales Manager OEM Solutions Sales, South Asia",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mw04",
@@ -227,7 +370,14 @@
       "startTime": "15:30",
       "endTime": "16:00",
       "category": "Modern Workplace & PCs",
-      "description": "IT spend is on the rise as businesses refresh PCs and adopt new AI solutions. Simplify workflows and reclaim time with Dell's cloud-based PCs and peripheral management solutions. Discover how you can optimise fleet-wide security with Dell Trusted Workspace and tap into the latest PCs and services with no upfront cost, with Dell APEX PC as a Service. Learn how to reduce the attack surface and unlock valuable capital while staying focused on winning business."
+      "description": "IT spend is on the rise as businesses refresh PCs and adopt new AI solutions. Simplify workflows and reclaim time with Dell's cloud-based PCs and peripheral management solutions. Discover how you can optimise fleet-wide security with Dell Trusted Workspace and tap into the latest PCs and services with no upfront cost, with Dell APEX PC as a Service. Learn how to reduce the attack surface and unlock valuable capital while staying focused on winning business.",
+      "speakers": [
+        {
+          "name": "Thomas Anderson",
+          "title": "IT Solutions Manager",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "mdc06",
@@ -237,7 +387,14 @@
       "startTime": "15:30",
       "endTime": "16:00",
       "category": "Modern Data Center & Multicloud",
-      "description": "Private cloud deployment comes with a variety of complexities and challenges, from ensuring seamless and secure onboarding, to provisioning stacks with confidence, to managing lifecycle operations efficiently. In this session, we’ll peek behind the curtain of Dell's new unified approach to private-cloud deployment and management. We’ll explore demo using validated designs that simplify Day 0 to Day 2 operations, and even show how you can customise your own stacks."
+      "description": "Private cloud deployment comes with a variety of complexities and challenges, from ensuring seamless and secure onboarding, to provisioning stacks with confidence, to managing lifecycle operations efficiently. In this session, we'll peek behind the curtain of Dell's new unified approach to private-cloud deployment and management. We'll explore demo using validated designs that simplify Day 0 to Day 2 operations, and even show how you can customise your own stacks.",
+      "speakers": [
+        {
+          "name": "Srihari Dhandhapani",
+          "title": "Advisory Architect or Enterprise Cloud Architect",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
       "id": "ai04",
@@ -247,17 +404,59 @@
       "startTime": "16:00",
       "endTime": "16:30",
       "category": "Artificial Intelligence",
-      "description": "As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI. With a robust, open architecture that supports seamless data ingestion, discovery, and real-time processing, this platform helps organisations accelerate their AI pipelines. Whether you're decoding the human genome, rendering visual effects, exploring space, or driving the next medical breakthrough, discover how Dell provides the data foundation to turn big ideas into real innovation."
+      "description": "As GPU-accelerated computing pushes the boundaries of performance, organisations need a data platform built to keep up. The Dell AI Data Platform — powered by the Dell Data Lakehouse, Dell PowerScale, and Dell ObjectScale — is purpose-built to place, process, and protect your data from edge to core to cloud, while delivering the speed and scale required for AI. With a robust, open architecture that supports seamless data ingestion, discovery, and real-time processing, this platform helps organisations accelerate their AI pipelines. Whether you're decoding the human genome, rendering visual effects, exploring space, or driving the next medical breakthrough, discover how Dell provides the data foundation to turn big ideas into real innovation.",
+      "speakers": [
+        {
+          "name": "Roshan Kumar",
+          "title": "Director, Systems EngineeringAI, Data Management, and EDGE",
+          "company": "Dell Technologies"
+        }
+      ]
     },
     {
-      "id": "mdc07",
-      "title": "Deploy AI Workloads at Warp Speed with Dell AI Factory",
-      "code": "MDC07-P",
+      "id": "mw01",
+      "title": "Dell Pro AI PCs, silicon innovation, and the future of work: Why refresh with Dell Technologies?",
+      "code": "MW01-P",
       "date": "3 September 2025",
       "startTime": "16:00",
       "endTime": "16:30",
-      "category": "Modern Data Center & Multicloud",
-      "description": "In a rapidly evolving AI landscape, organisations face time-to-market pressures, cost inefficiencies, skill gaps, and scaling unpredictability. Dell is redefining infrastructure to simplify the deployment of AI workloads on the Dell AI Factory through automation, streamlined operations, hybrid-cloud orchestration, and zero-trust security. In this session, we’ll provide an overview of Dell’s new blueprint for infrastructure flexibility, and share best practices for deploying and managing your AI workloads."
+      "category": "Modern Workplace & PCs",
+      "description": "Dell Technologies, the world's leading commercial AI PC brand,* is transforming the future of computing. Join us to learn more about the rapidly evolving AI PC market and how the Dell Pro family of AI PCs leverages groundbreaking silicon innovation to provide you the right AI PC for your workloads. Combined with our innovative PC designs and our industry-leading ecosystem solutions; discover how refreshing your PC fleet with Dell Technologies can boost employee productivity, drive business growth, and delight your end users.",
+      "speakers": [
+        {
+          "name": "Michael Rodriguez",
+          "title": "Product Manager - AI PCs",
+          "company": "Dell Technologies"
+        }
+      ]
+    },
+    {
+      "id": "gen002",
+      "title": "Real to Reel: From Space Missions to Silver Screens",
+      "code": "GEN-002",
+      "date": "3 September 2025",
+      "startTime": "17:15",
+      "endTime": "18:00",
+      "category": "Celebrity Session",
+      "description": "A Fireside Conversation with Dr. S. Somanath and R. Balki, Moderated by Mandira Bedi",
+      "isSpecialSession": true,
+      "speakers": [
+        {
+          "name": "Mandira Bedi",
+          "title": "Actor, Fashion Designer, & Television Presenter",
+          "company": "Host"
+        },
+        {
+          "name": "Dr. S. Somanath",
+          "title": "Distinguished Indian Aerospace Engineer & 10th Chairman of the ISRO",
+          "company": "ISRO"
+        },
+        {
+          "name": "R. Balki",
+          "title": "Former Chairman and Chief Creative Officer Lowe Lintas & Film Writer, Director and Producer",
+          "company": ""
+        }
+      ]
     }
   ]
 }
